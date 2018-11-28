@@ -1,0 +1,249 @@
+html, body {
+  margin:0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FBEEE4;
+  font-family:'Montserrat', sans-serif;
+  font-size: 20px;
+  color:#696565;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  }
+  .navbar1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 20px;
+    height: 25px;
+    margin-top: 30px;
+    width: 500px;
+    margin-right: 0px;
+    margin-left: 780px;
+    color:#696565;
+    }
+
+  .navbaritem{
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    color:#696565;
+  }
+
+  .navbaritem:hover{
+    text-decoration: underline;
+    font-size: 22px;
+    cursor: pointer;
+    color:#696565;
+  }
+.main-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  color:#696565
+}
+
+.main-icon:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.main-icon:hover:before, .main-icon:hover:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #FDA8CF;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.main-icon:hover:after {
+  background: #F3CE5E;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.profile-pic {
+  border-radius:75%;
+  margin-left: 50px;
+  overflow:hidden;
+}
+
+.about{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.about-title {
+  font-size: 40px;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+}
+
+.bio {
+  margin-top: 70px;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  width: 500px;
+}
+
+.bio2  {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.connect{
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.resume{
+  margin-bottom: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.resume:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.linkedin{
+  margin-bottom: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.linkedin:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.email{
+  margin-bottom: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.email:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.spotify{
+  margin-bottom: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.spotify:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
